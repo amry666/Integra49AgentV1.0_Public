@@ -1,0 +1,24 @@
+[
+    {
+        "ID": 1,
+        "URL": "FirstInstall",
+        "TB": "TEST",
+        "KET": "",
+        "STATUS": "1",
+        "JENIS": "R",
+        "CREATEDDATE": "Dec  6 2018  4:25AM",
+        "UPDATEDATE": "Dec  6 2018  4:25AM",
+        "UPDATEBY": "system"
+    },
+    {
+        "ID": 2,
+        "URL": "FirstInstall",
+        "TB": "TEST",
+        "KET": "",
+        "STATUS": "1",
+        "JENIS": "R",
+        "CREATEDDATE": "Dec  6 2018  4:25AM",
+        "UPDATEDATE": "Dec  6 2018  4:25AM",
+        "UPDATEBY": "system"
+    }
+]

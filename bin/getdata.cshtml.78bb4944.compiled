@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<preserve resultType="2" virtualPath="/Views/Page/GetData.cshtml" hash="ffffffffb4e96f50" filehash="421c26e79c09" flags="110000" assembly="App_Web_ldcakq2x" type="ASP._Page_Views_Page_GetData_cshtml">
+<preserve resultType="2" virtualPath="/Views/Page/GetData.cshtml" hash="ffffffffb4e96f50" filehash="42152bae906f" flags="110000" assembly="App_Web_33miusy1" type="ASP._Page_Views_Page_GetData_cshtml">
     <filedeps>
         <filedep name="/Views/Page/GetData.cshtml" />
     </filedeps>

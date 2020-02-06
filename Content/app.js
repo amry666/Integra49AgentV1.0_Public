@@ -39,9 +39,14 @@ function setPageProp() {
     $('.menuside').each(function () {
         var href = $(this).attr('href');
         var judulhal = $(this).attr('judulhal');
-        //console.log(url, href);
+        var menuinfo = $(this).attr('menuifo');
         if (url == href.replace("..", "")) {
             $('.judulhal').html(judulhal);
+            if (menuinfo !== "null") {
+                $('.menuinfo_div').removeClass('d-none');
+                $('.menuinfo').html(menuinfo);
+            }
+            
             document.title = judulhal;
             var breadcrumb = location.pathname.split("/");
             var html = "";

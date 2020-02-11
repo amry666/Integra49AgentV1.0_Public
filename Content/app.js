@@ -79,7 +79,10 @@ function loadContent(targetUrl) {
                 setPageProp(), setActivemenu(),
                 setTimeout(function () { $('#dynamic').removeClass('d-none') }, 400);
                 NProgress.done();
-                checkver();
+                if (localStorage.UNIT === 'null' || typeof localStorage.UNIT == undefined) {
+                    checkver();
+                }
+                
                 ///load scheduler on head
                 loadscheduler();
         }

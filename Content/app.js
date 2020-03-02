@@ -74,6 +74,7 @@ function loadContent(targetUrl) {
     NProgress.start();
     $("#dynamic").load("../Page/" + targetUrl.replace("../", ""), function (response, status, xhr) {
         if (status == "success") {
+            $('#box_preview,#error_load').addClass('hidden');
             //$('#dynamic,#error_load').empty().addClass('d-none');
             //setTimeout(function () { $('.preloader2').addClass('d-none') }, 300),
                 setPageProp(), setActivemenu(),
@@ -89,7 +90,10 @@ function loadContent(targetUrl) {
         else {
             var msg = "Mohon Maaf Terjadi Kesalahan saat memuat halaman, segera hubungi Administrator.";
             setTimeout(function () { $('.preloader2').addClass('d-none') }, 100),
-                setTimeout(function () { $("#error_load").empty().removeClass('d-none').html(msg + "<br><small class='text-danger'>" + xhr.status + " " + xhr.statusText + "</small>") }, 200);
+                setTimeout(function () {
+                $('#box_preview,#dynamic').addClass('d-none'), NProgress.done(),
+                $("#error_load").empty().removeClass('d-none').html(msg + "<br><small class='text-danger'>" + xhr.status + " " + xhr.statusText + "</small>")
+                }, 200);
         }
     });
     

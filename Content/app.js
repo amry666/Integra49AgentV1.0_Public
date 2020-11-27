@@ -42,7 +42,8 @@ function setPageProp() {
         var menuinfo = $(this).attr('menuifo');
         if (url == href.replace("..", "")) {
             $('.judulhal').html(judulhal);
-            if (menuinfo !== "null") {
+
+            if (menuinfo !== "null" && menuinfo != undefined && menuinfo !== "undefined") {
                 $('.menuinfo_div').removeClass('d-none');
                 $('.menuinfo').html(menuinfo);
             }
